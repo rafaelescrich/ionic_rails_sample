@@ -2,6 +2,6 @@
 
  angular.module('config', [])
 
-.constant('ENV', {name:'development',apiEndpoint:'http://localhost:3000/api/v1'})
+.constant('ENV', {name:'development',apiEndpoint:'http://portalmecapi.c3sl.ufpr.br/v1'})
 
 ;
