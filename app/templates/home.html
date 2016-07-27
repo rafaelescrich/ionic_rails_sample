@@ -1,8 +1,14 @@
-<ion-view view-title="Home">
+ <ion-view view-title="Home">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="user in users">
-        {{user.email}}
+      <ion-item>
+          <button class="button button-block button-positive" ng-click"$scope.like()">Like</button>
+      </ion-item>
+      <ion-item>
+          Recurso: {{recurso}}
+      </ion-item>
+      <ion-item>
+          <button class="button button-block button-positive" ng-click"$scope.refresh()">Refresh</button>
       </ion-item>
     </ion-list>
   </ion-content>

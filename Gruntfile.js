@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         constants: {
           ENV: {
             name: 'development',
-            apiEndpoint: 'http://localhost:3000/api/v1'
+            apiEndpoint: 'http://portalmecapi.c3sl.ufpr.br/v1'
           }
         }
       },

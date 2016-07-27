@@ -24,14 +24,13 @@ angular.module('sample.auth', [])
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     $auth.submitLogin($scope.loginData)
-      .then(function(resp) { 
+      .then(function(resp) {
+        console.log('auth headers', $auth.retrieveData('auth_headers'));
         $scope.closeLogin();
         $state.go('app.home');
       })
-      .catch(function(resp) { 
+      .catch(function(resp) {
         console.log(resp);
       });
   };
 });
-
-
