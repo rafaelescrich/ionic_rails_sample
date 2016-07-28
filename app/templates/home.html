@@ -2,13 +2,13 @@
   <ion-content>
     <ion-list>
       <ion-item>
-          <button class="button button-block button-positive" ng-click"$scope.like()">Like</button>
+          <button class="button button-block button-positive" ng-click="like()">Like</button>
       </ion-item>
       <ion-item>
-          Recurso: {{recurso}}
+          <p>Recurso: {{recurso.likes_count}}</p>
       </ion-item>
       <ion-item>
-          <button class="button button-block button-positive" ng-click"$scope.refresh()">Refresh</button>
+          <button class="button button-block button-positive" ng-click="refresh()">Refresh</button>
       </ion-item>
     </ion-list>
   </ion-content>

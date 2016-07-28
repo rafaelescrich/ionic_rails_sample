@@ -14,7 +14,7 @@ angular.module('sample.home', [])
   };
 
   $scope.like = function() {
-    $http.post(ENV.apiEndpoint + '/learning_objects/3/like', data)
+    $http.post('http://portalmecapi.c3sl.ufpr.br/v1/learning_objects/3/like')
       .success(function (res) {
         console.log('like com sucesso');
       })
@@ -24,7 +24,7 @@ angular.module('sample.home', [])
   };
 
   $scope.refresh = function() {
-    $http.get(ENV.apiEndpoint + 'learning_objects/3?obba=')
+    $http.get('http://portalmecapi.c3sl.ufpr.br/v1/learning_objects/3?obba=')
       .then(function(response) {
           $scope.recurso = response.data;
       });
